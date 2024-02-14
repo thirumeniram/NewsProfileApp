@@ -21,11 +21,10 @@
 **Navigation**
 - Employs React Navigation to facilitate movement between the profile page and other placeholder screens, demonstrating the app's navigational capabilities.
 
-**Mock Data**
-- Utilizes static data to simulate user information and articles. A JSON file containing dummy data represents user details and a list of articles to illustrate the app's functionality without the need for a backend.
+## Integration with NewsAPI
 
-**Integration with NewsApi**
-- Fetches real news articles using NewsApi, providing dynamic content to the app and enhancing the user experience with up-to-date news stories.
+- Fetches **real news articles** using **NewsAPI**, providing **dynamic content** to the app and enhancing the user experience with up-to-date news stories.
+
 
 ## Installation Guide
 
