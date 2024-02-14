@@ -1,40 +1,36 @@
 import axios from "axios";
 import React, { createContext, useEffect, useState } from "react";
-import { getNewsAPI} from "./API";
+import { getNewsAPI,getHeadlinesApi} from "./API";
 
 export const NewsContext = createContext();
 
 const Context = ({ children }) => {
   const [news, setNews] = useState([]);
   const [PostedArticles,setPostedArticles]=useState([]);
-  const [category, setCategory] = useState("general");
-  const [postCategory,setPostCategory]=useState("sports")
-  const [source, setSource] = useState("cnn");
-  const [index, setIndex] = useState(1);
+  const [country, setCountry] = useState("in");
+  const [postCategory,setPostCategory]=useState("cricket")
   const [darkTheme, setDarkTheme] = useState(true);
   const [bookmarks, setBookmarks] = useState([]); // State to manage bookmarks
 
-  const fetchNews = async (reset = category) => {
-    const { data } = await axios.get(getNewsAPI(reset));
+
+  const fetchNews = async (reset = country) => {
+    const { data } = await axios.get(getHeadlinesApi(reset));
+    
     setNews(data);
-    setIndex(1);
+    
+    
   };
 
   const fetchPostedArticles = async (reset = postCategory) => {
     const { data } = await axios.get(getNewsAPI(reset));
     setPostedArticles(data);
-    setIndex(1);
+    console.log(data);
   };
 
-  // const fetchNewsfromSource = async () => {
-  //   try {
-  //     const { data } = await axios.get(getSourceAPI(source));
-  //     setNews(data);
-  //     setIndex(1);
-  //   } catch (error) {
-  //     // console.log(error);
-  //   }
-  // };
+  
+
+  
+
 
   // Function to add a news item to bookmarks
   const addBookmark = (newsItem) => {
@@ -57,31 +53,20 @@ const Context = ({ children }) => {
 
   useEffect(() => {
     fetchNews();
-  }, [category]);
+  }, [country]);
 
   useEffect(()=>{
     fetchPostedArticles()
   },[postCategory])
 
-  // useEffect(() => {
-  //   fetchNewsfromSource();
-  // }, [source]);
-
   
 
-
-  return (
+return (
     <NewsContext.Provider
       value={{
         news,
         PostedArticles,
-        setCategory,
-        index,
-        setIndex,
-        setSource,
-        darkTheme,
-        setDarkTheme,
-        fetchNews,
+      
         bookmarks,
         addBookmark,
         removeBookmark,

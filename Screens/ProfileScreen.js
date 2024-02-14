@@ -11,8 +11,10 @@ import ProfileNavigationTabs from '../Components/ProfileNaviagationTabs';
 
 const ProfileScreen = () => {
   const [selected, setSelected] = useState(1);
-  const { bookmarks, PostedArticles } = useContext(NewsContext);
+  const { bookmarks, PostedArticles,headlines } = useContext(NewsContext);
   const theme = useTheme();
+
+  console.log(headlines);
 
   return (
     <Box flex={1} backgroundColor="white">
