@@ -21,9 +21,9 @@
 **Navigation**
 - Employs React Navigation to facilitate movement between the profile page and other placeholder screens, demonstrating the app's navigational capabilities.
 
-## Integration with NewsAPI
+## Integration with **NewsAPI**
 
-- Fetches **real news articles** using **NewsAPI**, providing **dynamic content** to the app and enhancing the user experience with up-to-date news stories.
+- Fetches **REAL NEWS ARTICLES** using **NewsAPI**, providing **DYNAMIC CONTENT** to the app and enhancing the user experience with up-to-date news stories.
 
 
 ## Installation Guide
