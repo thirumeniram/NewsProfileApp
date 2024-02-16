@@ -12,7 +12,7 @@
 
 # Profile Screen - Bookmarked Articles 
 
-![Bookmark Tab](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/10d42afe-93b6-4115-8061-d69b430a6c55)
+![Bookmark Tab](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/ace9d714-e536-4d63-b434-471ae99a1d1e)
 
 # Settings Screen
 
