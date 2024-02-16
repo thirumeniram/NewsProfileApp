@@ -2,6 +2,23 @@
 
 **NewsProfileApp** is a React Native application designed to emulate a user profile page similar to Instagram, but specifically for news enthusiasts. This app showcases a user's personal information, their published news articles, and their bookmarked or liked stories, all built using Expo, React Native, NativeBase, and React Navigation.
 
+# HomeScreen
+
+![HomeScreen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/21832b7b-c125-4ccf-8441-95ffc6315692)
+
+# Profile Screen - Posted Articles 
+
+![Posted Article Tab](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/00aee56d-f29c-4e0e-a452-3d10842863a8)
+
+# Profile Screen - Bookmarked Articles 
+
+![Bookmark Tab](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/10d42afe-93b6-4115-8061-d69b430a6c55)
+
+# Settings Screen
+
+![Settings Screen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/51a758e7-cdf5-4ce5-8031-a14c246eb162)
+
+
 ## Features
 
 **User Information Section**
