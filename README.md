@@ -4,7 +4,7 @@
 
 # HomeScreen
 
-![HomeScreen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/21832b7b-c125-4ccf-8441-95ffc6315692)
+![HomeScreen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/40f4173d-80c9-41a9-84a0-29f49584c86c)
 
 # Profile Screen - Posted Articles 
 
