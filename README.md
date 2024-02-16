@@ -31,22 +31,27 @@
 - Displays the user's avatar, name, and a short biography, utilizing NativeBase's `Avatar` and `Text` components for a sleek presentation.
 
 **Tabs for Content Organization**
-- Incorporates tabs to differentiate between the user's posted news articles and bookmarked/liked stories. This is achieved through either NativeBase's `Tab` component or React Navigation's tab navigators, ensuring an organized and intuitive user interface.
+- Incorporates tabs to differentiate between the user's posted news articles and bookmarked/liked stories. This is achieved through  React Navigation's tab navigators, ensuring an organized and intuitive user interface.
 
-**News Cards**
-- Each news article, whether posted or bookmarked, is represented as a card displaying the article's title, an excerpt, and a thumbnail image, using NativeBase's `Card` component for a consistent and engaging layout.
+**Posted Articles Card and News Card**
+- Each news article, whether posted or bookmarked, is represented as a card displaying the article's title, an excerpt, and a thumbnail image for a consistent and engaging layout.
 
 **Settings Icon**
-- Features an icon for navigating to a settings page, laying the groundwork for further navigation implementation within the app.
+- Features an icon for navigating to a settings page,  for further navigation implementation within the app.
 
 ## Functionality
 
 **Navigation**
-- Employs React Navigation to facilitate movement between the profile page and other placeholder screens, demonstrating the app's navigational capabilities.
+- Used React Navigation to facilitate movement between the profile page and other settings screens, demonstrating the app's navigational capabilities.
 
 ## Integration with **NewsAPI**
 
-- Fetches **REAL NEWS ARTICLES** using **NewsAPI**, providing **DYNAMIC CONTENT** to the app and enhancing the user experience with up-to-date news stories.
+- Fetches **REAL NEWS ARTICLES** using **NewsAPI**  to the app and enhancing the user experience with up-to-date news stories.
+
+## State Management**
+
+Employs **Context Api** for  state Managemnet
+
 
 
 ## Installation Guide
