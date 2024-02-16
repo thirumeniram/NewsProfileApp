@@ -16,7 +16,7 @@
 
 # Settings Screen
 
-![Settings Screen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/51a758e7-cdf5-4ce5-8031-a14c246eb162)
+![Settings Screen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/67c31ce1-8d1a-4803-8263-002f5db3c213)
 
 
 ## Features
