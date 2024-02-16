@@ -48,7 +48,7 @@
 
 - Fetches **REAL NEWS ARTICLES** using **NewsAPI**  to the app and enhancing the user experience with up-to-date news stories.
 
-## State Management**
+## State Management
 
 Employs **Context Api** for  state Managemnet
 
