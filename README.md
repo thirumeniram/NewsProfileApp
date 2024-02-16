@@ -18,6 +18,12 @@
 
 ![Settings Screen](https://github.com/thirumeniram/NewsProfileApp/assets/66516937/67c31ce1-8d1a-4803-8263-002f5db3c213)
 
+## Tech Stack and Tools
+
+- **React Natve**
+- **Context Api**
+- **React Navigation**
+- **Native Base**
 
 ## Features
 
