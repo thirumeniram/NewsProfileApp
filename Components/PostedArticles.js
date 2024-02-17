@@ -1,6 +1,7 @@
 
 import React from 'react';
-import {  Box, VStack, Text ,useTheme, } from 'native-base'; // Import from NativeBase instead of react-native
+import { ScrollView } from 'react-native';
+import {  Box, VStack, Text ,useTheme,Dimensions} from 'native-base'; // Import from NativeBase instead of react-native
 import { Image} from 'react-native';
 
 
@@ -10,34 +11,41 @@ const PostedArticles = ({article}) => {
     const theme = useTheme();
 
     return (
+      <ScrollView horizontal={false} showsVerticalScrollIndicator={false}>
+      
       <Box
-        borderWidth="1"
-        borderColor={theme.colors.primary[500]}
         bg={theme.colors.background.light}
         my="2"
         borderRadius="md"
         overflow="hidden"
-        width="90%"
-        marginLeft="5"
+        width="100%"
+        
        >
+       <Box height="2px" bg= "#C0C0C0" width="100%" />
+
          <VStack space={2}>
          <Box px="3" py="2">
-           <Text bold fontSize={18} numberOfLines={2} ellipsizeMode="tail" color={theme.colors.primary[700]}>
+           <Text bold fontSize={16} numberOfLines={2} ellipsizeMode="tail" color={theme.colors.primary[700]}>
              {title}
            </Text>
          </Box>
-         <Box>
-           <Image source={{ uri: urlToImage }} style={{ width: '100%', height: 160, resizeMode: 'cover'}} />
+         <Box style={{marginLeft:10}}>
+           <Image source={{ uri: urlToImage }} style={{ width: '95%', height: 160, resizeMode: 'cover',borderRadius: 10 }} />
          </Box>
-         <Box px="3" py="3" >
-           <Text fontSize={15} numberOfLines={3} ellipsizeMode="tail" color={theme.colors.text.light}>
+         <Box px="3" py="2" >
+           <Text fontSize={14} numberOfLines={3} ellipsizeMode="tail" color={theme.colors.text.light}>
              {description}
            </Text>
          </Box>
          </VStack>
        </Box>
-     
+      
+
+                
+       </ScrollView>
     );
 };
 
 export default PostedArticles;
+
+

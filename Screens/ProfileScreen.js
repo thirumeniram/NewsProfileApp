@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Box, Divider, FlatList, useTheme,Text} from 'native-base';
+import { View,ScrollView, } from 'react-native';
 import { NewsContext } from '../Api/ContextApi';
 import GridIcon from '../assets/GridIcon.png'; // Adjust according to your assets
 import BookmarkIcon from '../assets/bookmark.webp'; // Adjust according to your assets
@@ -11,16 +12,17 @@ import ProfileNavigationTabs from '../Components/ProfileNaviagationTabs';
 
 const ProfileScreen = () => {
   const [selected, setSelected] = useState(1);
-  const { bookmarks, PostedArticles,headlines } = useContext(NewsContext);
+  const { bookmarks, PostedArticles } = useContext(NewsContext);
   const theme = useTheme();
 
-  console.log(headlines);
+
 
   return (
+    <ScrollView>
     <Box flex={1} backgroundColor="white">
       <NewsProfileHeader 
         initials="T"
-        posts="66"
+        posts="60"
         followers="2K"
         following="200"
         name="Thirumeniram"
@@ -38,25 +40,38 @@ const ProfileScreen = () => {
       />
 
       {selected === 1 ? (
-        <FlatList
-            data={PostedArticles.articles}
+        <View style={{ marginTop: 15}}>
+      <FlatList
+        
+        data={PostedArticles.articles
+             .filter(item => item.urlToImage) // Filter to include only items with urlToImage
+            .slice(0, 60)} 
             keyExtractor={(item, index) => String(index)}
+            horizontal={false}
+            showsHorizontalScrollIndicator={false}
             renderItem={({ item }) => 
               <PostedArticleCard article={item}/>
             }
             numColumns={1}
         />
+        </View>
       ) : (
+        <View style={{ marginTop: 15}}>
         <FlatList
+         horizontal={false} 
+                showsVerticalScrollIndicator={false}
           data={bookmarks}
           renderItem={({ item }) => <NewsCard article={item} />}
           keyExtractor={item => item.name}
           numColumns={1}
         />
+        </View>
       )}
     </Box>
-    
+    </ScrollView>
   );
 };
 
 export default ProfileScreen;
+
+

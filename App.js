@@ -4,7 +4,7 @@ import React from 'react';
 import { NativeBaseProvider } from 'native-base';
 import { NavigationContainer } from '@react-navigation/native';
 import  AppNavigation  from './Navigation/AppNavigation'; // Adjust the path as necessary
-import AppTheme from  './style'   // Adjust the path as necessary
+ // Adjust the path as necessary
 import Context from './Api/ContextApi'; // Adjust the path as necessary
 import { extendTheme } from 'native-base';
 

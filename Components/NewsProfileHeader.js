@@ -16,27 +16,27 @@ const NewsProfileHeader = ({ initials, posts, followers, following, name, profes
         {initials}
       </Avatar>
       <Box width={75} alignItems="center">
-        <Text fontSize="24" fontWeight="400" color="black">
+        <Text fontSize="24" fontWeight="500" color="black">
           {posts}
         </Text>
         <Text fontSize="16" color="black">Posts</Text>
       </Box>
       <Box width={75} alignItems="center">
-        <Text fontSize="24" fontWeight="400" color="black">
+        <Text fontSize="24" fontWeight="500" color="black">
           {followers}
         </Text>
         <Text fontSize="16" color="black">Followers</Text>
       </Box>
       <Box width={75} alignItems="center">
-        <Text fontSize="24" fontWeight="400" color="black">
+        <Text fontSize="24" fontWeight="500" color="black">
           {following}
         </Text>
         <Text fontSize="16" color="black">Following</Text>
       </Box>
     </Box>
     <Text fontSize="18" color="black" fontWeight="600" mt="2.5">{name}</Text>
-    <Text fontSize="16" color="black" fontWeight="400" mt="2.5">{profession}</Text>
-    <Text fontSize="16" color="black" fontWeight="400" mt="2.5">{organization}</Text>
+    <Text fontSize="16" color="black" fontWeight="500" mt="2.5">{profession}</Text>
+    <Text fontSize="16" color="black" fontWeight="500" mt="2.5">{organization}</Text>
     
      </Box>
   );
